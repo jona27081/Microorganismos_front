@@ -1,0 +1,42 @@
+body {
+  background: #A1FFCE;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vw;
+  width: 100vw;
+}
+
+.container {
+  max-width: 80vw;
+  /* Establece el ancho máximo deseado */
+  margin: 0 auto;
+  /* Centra el contenedor en la página */
+  border-color: black;
+  border-radius: 10px;
+  border: 10px;
+
+}
+
+.logout-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.logout-button .logout {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button .logout:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,108 @@
+.sidebar-container {
+    width: 220px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.959);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 10px rgba(128, 128, 128, 0.507);
+    transition: 0.5s;
+    z-index: 10;
+    position: absolute;
+  }
+  
+  .toggle {
+    position: absolute;
+    top: 10px;
+    right: -37px;
+    z-index: -1;
+    background-color: #06af00;
+    height: 35px;
+    width: 40px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .lines {
+    width: 60%;
+    height: 2px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    padding-right: 10px;
+  }
+  
+  .toggle-function {
+    transform: translate(-220px, 0);
+    transition: 0.5s;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-color: #06af00;
+  }
+  
+  .profile-card .title {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #191e24;
+  }
+  
+  .profile-card .subtitle {
+    font-weight: 300;
+    font-size: small;
+    letter-spacing: 1px;
+  }
+  
+  .links-list li a,
+  .signout a {
+    color: lightgray;
+    margin-left: 25px;
+    display: block;
+    font-weight: 300;
+    padding: 5px 0;
+    font-size: medium;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .links-list i,
+  .signout i {
+    color: lightgray;
+    margin: .6rem;
+  }
+  
+  .links-list li :hover,
+  .signout a:hover {
+    color: white;
+    font-weight: 600;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .links-list li {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .links-list li:nth-child(5) {
+    padding-top: 10px;
+    border-top: 1px rgba(128, 128, 128, 0.15) solid;
+  }
+  
+  .signout {
+    border-top: 1px rgba(128, 128, 128, 0.15) solid;
+    padding: 10px 0;
+  }
+  

@@ -1,0 +1,158 @@
+.centeredDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    color: black;
+}
+
+.contentWrapper {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.formSintoma {
+    color: white;
+    width: 300px;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    margin: 1px;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 252, 0, 0.7);
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+}
+
+input[type='checkbox'] {
+    accent-color: rgb(5, 211, 183);
+    width: 15px;
+    height: 15px;
+    z-index: 9999;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.true {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+    color: black;
+}
+
+.sintomas-container-registro {
+    margin-top: 1px;
+    align-items: center;
+}
+
+.sintomas-registro {
+    max-height: 12rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    overflow: auto;
+
+
+}
+
+.sintomas-registro::-webkit-scrollbar {
+    width: 8px;
+    /* Ancho de la barra de desplazamiento */
+    background-color: #F0F0F0;
+    /* Color de fondo de la barra de desplazamiento */
+}
+
+.sintomas-registro::-webkit-scrollbar-thumb {
+    background-color: #4DA8DA;
+    /* Color del "pulgar" de la barra de desplazamiento */
+    border-radius: 4px;
+    /* Borde redondeado del "pulgar" */
+}
+
+.sintomas-registro::-webkit-scrollbar-thumb:hover {
+    background-color: #368BBE;
+    /* Color del "pulgar" de la barra de desplazamiento en el estado de hover */
+}
+
+.sintomas-registro::-webkit-scrollbar-track {
+    background-color: #F0F0F0;
+    /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+
+.sintomas {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+
+label {
+    color: black;
+    margin: 5px;
+}
+
+.save {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    background-color: rgb(21, 255, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.save:active {
+    background-color: rgb(0, 88, 77);
+}
+
+.urls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.urls input {
+    flex: 1;
+}
+
+.urls button {
+    width: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color:  rgb(5, 211, 183);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
